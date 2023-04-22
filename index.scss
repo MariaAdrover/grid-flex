@@ -1,0 +1,101 @@
+$rojo: red;
+
+#container {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+
+#pdf {
+    background-color:aquamarine;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    /* gap: 10px; */
+    grid-template-columns: auto;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 
+        "header"
+        "row1"
+        "row2";
+}
+
+.row {
+    background-color: cadetblue;
+    margin:  8px
+}
+
+.col {
+    background-color: cyan;    
+    margin:  8px
+}
+
+.flex {
+    background-color: greenyellow;    
+    margin:  8px;
+    display: flex;
+}
+
+#header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 10% 40% 15% 15% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "a b c d e";
+}
+
+#header {
+    #a {
+        background-color: $rojo;
+    }
+}
+
+#a {    
+    grid-area: a;
+}
+
+#b {    
+    grid-area: b;
+}
+
+#c {    
+    grid-area: c;
+}
+
+#d {    
+    grid-area: d;
+}
+
+#e {    
+    grid-area: e;
+}
+
+#row1 {
+    grid-area: row1;
+        
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "row1col1 row1col2";
+}
+
+#row1col1 {
+    grid-area: row1col1;
+}
+
+#row1col2 {
+    grid-area: row1col2;
+}
+
+#row2 {
+    grid-area: row2;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "row2col1 row2col2";
+}

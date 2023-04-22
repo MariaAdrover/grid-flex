@@ -1,0 +1,4 @@
+npm install -g sass
+sass --version
+sass index.scss index.css
+sass --watch index.scss index.css
